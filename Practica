@@ -7,3 +7,15 @@ c(
 1, 0, 1, 0, 1, 0, #12
 1, 1, 1, 1, 0, 1 #20
 ),
+nrow = 6, # Número de filas
+ncol = 6, # Número de columnas
+byrow = TRUE, # Pasamos los valores por filas
+dimnames = list(
+c("2", "5", "4", "10", "12", "20"),
+c("2", "5", "4", "10", "12", "20")
+) # Nombre de los elementos
+)
+
+my_poset <- Poset$new(A)
+
+my_poset
